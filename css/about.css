@@ -149,3 +149,46 @@
     }
   }
   
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    margin-top: 2em;
+    height: 400px;
+    width: 400px;
+  }
+  
+  .video-container iframe {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .play-button:before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 50px solid #fff;
+  }
+  
+  .play-button:hover {
+    background-color: rgba(0,0,0,1);
+  }
+  

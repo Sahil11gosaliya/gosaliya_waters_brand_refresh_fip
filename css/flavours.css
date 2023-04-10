@@ -10,17 +10,15 @@ body {
 }
 
 .banner {
-    width: 50%;
+    width: 60%;
     height: 400px;
     overflow: hidden;
-    margin-left: 350px;
+    margin-left: 500px;
 
   }
   
   .banner img {
     align-items: center;
-    margin-left: 20%;
-    width: 60%;
     height: 98%;
     border-radius: 20px;
   } 
