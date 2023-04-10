@@ -1,0 +1,82 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #003366;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin-left: 1em;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .menu-icon {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+  
+    ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #003366;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+  
+    li {
+        margin: 0;
+    }
+  
+    input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+  }
+  
+  /* Main Styles */
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  
+  h2 {
+    color: #003366;
+  }
