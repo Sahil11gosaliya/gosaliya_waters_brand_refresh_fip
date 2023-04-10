@@ -1,9 +1,5 @@
-const playButton = document.querySelector('.play-button');
-const videoContainer = document.querySelector('.video-container');
-const videoIframe = videoContainer.querySelector('iframe');
-
-playButton.addEventListener('click', () => {
-  videoIframe.setAttribute('src', 'video/videoplayback.mp4');
-  videoContainer.style.paddingBottom = '0';
-  playButton.style.display = 'none';
+document.querySelector('.play-button').addEventListener('click', function() {
+  var video = this.nextElementSibling;
+  video.classList.add('playing');
+  video.play();
 });

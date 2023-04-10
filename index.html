@@ -10,8 +10,6 @@
   <header>
     <nav>
       <h1>ZIMA</h1>
-      <input type="checkbox" id="menu-icon">
-      <label for="menu-icon" class="menu-icon">&#9776;</label>
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -19,27 +17,25 @@
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
-    <div class="banner">
-      <img src="images/zima.webp" alt="ZIMA banner">
-    </div>
-    <h2>Image slider</h2>
+    <!-- <div class="banner">
+      <img src="images/zima.webp" alt="ZIMA banner"> -->
     <div class="slider">
       <div class="slide">
-            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo1"/>
+            <img src="images/zima_can.png" alt="Photo1"/>
         </div>
       <div class="slide">
-            <img src="https://images.unsplash.com/photo-1619266465172-02a857c3556d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" alt="Photo3"/>
+            <img src="images/hero.webp" alt="Photo3"/>
         </div> 
       <div class="slide">
-            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo2"/>
+            <img src="images/cheers.jpg" alt="Photo2"/>
         </div>
       <div class="slide">
-            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo3"/>
+            <img src="images/cool.jpg" alt="Photo3"/>
         </div> 
 
         <button class="btn-slide prev"><i class="fas fa-3x fa-chevron-circle-left"></i></button>
         <button class="btn-slide next"><i class="fas fa-3x fa-chevron-circle-right"></i></button>
-      
+    </div>
     </div>
     <div class="dots-container">
             <span class="dot active" data-slide="0"></span>
@@ -51,9 +47,10 @@
   <main>
     <section id="about">
       <h2>About ZIMA</h2>
-      <p>ZIMA is a premium alcoholic beverage made with natural ingredients and unique flavors. Our drinks are crafted
+      <img class="logo" src="images/logo.png">
+      <p class="p">ZIMA is a premium alcoholic beverage made with natural ingredients and unique flavors. Our drinks are crafted
         to provide a refreshing and sophisticated experience for adults.</p>
-      <ul>
+      <ul class="slogan">
         <li>Made with natural ingredients</li>
         <li>No artificial flavors or colors</li>
         <li>Unique and refreshing taste</li>
@@ -63,19 +60,19 @@
       <h2>Our Flavors</h2>
       <div class="flavors">
         <div class="flavor">
-          <img src="images/flavor1.jpg" alt="Flavor 1">
+          <img src="images/fruit1.jpg" alt="Flavor 1">
           <h3>Wild Berries</h3>
           <p>Our Wild Berries flavor is a delicious blend of juicy berries and crisp citrus. Perfect for a hot summer
             day, this drink will refresh your senses and leave you wanting more.</p>
         </div>
         <div class="flavor">
-          <img src="images/flavor2.jpg" alt="Flavor 2">
+          <img src="images/fruit2.jpg" alt="Flavor 2">
           <h3>Tropical</h3>
           <p>Transport yourself to a tropical paradise with our refreshing Tropical flavor. This drink is bursting with
             the flavors of exotic fruits and will make you feel like you're on vacation.</p>
         </div>
         <div class="flavor">
-          <img src="images/flavor3.jpg" alt="Flavor 3">
+          <img src="images/fruit3.jpg" alt="Flavor 3">
           <h3>Citrus</h3>
           <p>If you love citrus flavors, our Citrus ZIMA is the perfect choice for you. Made with a blend of tangy
             citrus fruits, this drink is perfect for a hot summer day or a night out with friends.</p>
@@ -87,8 +84,7 @@
       <p>At ZIMA, we believe that great taste and sophistication can go hand in hand. Our drinks are crafted to provide
         a unique and refreshing experience for adults who appreciate the finer things in life. Whether you're enjoying a
         night out with friends or relaxing at home, ZIMA is the perfect choice.</p>
-      <img src="images/promo.jpg" class="one" alt="ZIMA branding">
-      <img src="images/hero.webp" class="two" alt="ZIMA branding">
+      <img src="images/zima.webp" class="one" alt="ZIMA branding">
     </section>
     <section class="about">
       <h2>Our Story</h2>
@@ -100,21 +96,21 @@
     </section>
     <section id="testimonials">
       <h2>Testimonials</h2>
-      <div class="slider">
-        <div class="slide">
-          <img src="images/testimonial1.jpg" alt="Testimonial 1">
+      <div class="tests">
+        <div class="test">
+          <img src="images/1.jpg" alt="Testimonial 1">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu lectus leo. Sed commodo lorem eget
             ullamcorper fermentum. Proin ac sagittis lectus, vel tristique sapien. Suspendisse eget tortor sit
             amet justo vehicula bibendum in nec massa.</p>
         </div>
-        <div class="slide">
-          <img src="images/testimonial2.jpg" alt="Testimonial 2">
+        <div class="test">
+          <img src="images/2.jpg" alt="Testimonial 2">
           <p>Aliquam dapibus leo vel libero ultricies, non dignissim justo ultricies. Sed suscipit tellus non
             urna congue, ac interdum tellus elementum. Donec semper mi vitae blandit iaculis. Etiam convallis,
             augue ac aliquam hendrerit, risus purus ultricies dolor, nec scelerisque mauris est vitae sem.</p>
         </div>
-        <div class="slide">
-          <img src="images/testimonial3.jpg" alt="Testimonial 3">
+        <div class="test">
+          <img src="images/3.jpg" alt="Testimonial 3">
           <p>Curabitur sit amet magna ut nisl maximus accumsan. Vestibulum venenatis tempus ante, sit amet
             pellentesque tellus pellentesque eget. Vivamus a dolor nec velit consectetur sollicitudin. Ut ut
             ex ut dolor luctus rhoncus non non elit. Praesent vel magna libero.</p>
