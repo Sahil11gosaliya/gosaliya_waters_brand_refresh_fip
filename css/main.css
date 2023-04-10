@@ -1,0 +1,281 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 1em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-icon {
+      display: block;
+      font-size: 2em;
+      cursor: pointer;
+  }
+
+  ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #003366;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+  }
+
+  li {
+      margin: 0;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+      display: flex;
+  }
+}
+
+
+/* Banner Styles */
+
+.banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.banner img {
+  align-items: center;
+  margin-left: 20%;
+  width: 60%;
+  height: 98%;
+  border-radius: 20px;
+  box-shadow: 4px 5px lightblue;
+} 
+
+
+
+/* Main Styles */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+h2 {
+  color: #003366;
+  text-align: center;
+}
+
+/* Flavors Section Styles */
+
+.flavors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flavor {
+  flex-basis: 30%;
+  margin-bottom: 2em;
+}
+
+.flavor img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.flavor h3 {
+  color:#003366;
+margin-top: 1em;
+}
+
+.flavor p {
+margin-top: 1em;
+}
+
+/* Branding Section Styles */
+
+.branding {
+margin-top: 2em;
+}
+
+.branding p {
+margin-top: 1em;
+}
+
+
+.branding img {
+float: left;
+/* width: 50%;
+height: 20%; */
+border-radius: 30px;
+margin-bottom: 2em;
+vertical-align: top;
+}
+
+.one
+{
+  height: 300px;
+  width: 550px;
+}
+
+
+.two
+{
+  height: 300px;
+  width: 550px;
+}
+
+
+/* About Section Styles */
+
+.about {
+margin-top: 2em;
+}
+
+.about p {
+margin-top: 1em;
+}
+
+.about img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+margin-bottom: 2em;
+}
+
+/* Footer Styles */
+
+footer {
+background-color: #003366;
+color: #fff;
+padding: 1em;
+text-align: center;
+}
+
+.contact-info {
+display: flex;
+justify-content: space-around;
+margin-top: 2em;
+}
+
+.contact-info div {
+flex-basis: 30%;
+text-align: center;
+}
+
+.contact-info h4 {
+color: #fff;
+margin-top: 0;
+}
+
+.contact-info p {
+margin-top: 0;
+}
+
+/* Form Styles */
+
+form {
+display: flex;
+flex-direction: column;
+max-width: 600px;
+margin: 0 auto;
+}
+
+label {
+color: #003366;
+margin-top: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+border: none;
+border-radius: 5px;
+padding: 0.5em;
+margin-top: 0.5em;
+}
+
+input[type="text"],
+input[type="email"] {
+width: 100%;
+}
+
+textarea {
+height: 150px;
+width: 100%;
+}
+
+input[type="submit"] {
+background-color: #003366;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 0.5em;
+margin-top: 1em;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #002447;
+}
+
+input[type="submit"]:focus {
+outline: none;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+.flavor {
+flex-basis: 100%;
+}
+
+.contact-info {
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-info div {
+  margin-bottom: 2em;
+}
+
+}
+
